@@ -84,9 +84,6 @@ module.exports = function(content) {
 			}
 		});
 
-		// required for Vue 1.0 shorthand syntax
-		minimizeOptions.customAttrSurround = [[/@/, new RegExp('')], [/:/, new RegExp('')]]
-
 		content = htmlMinifier.minify(content, minimizeOptions);
 	}
 
